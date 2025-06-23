@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel-X</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("travel-agency-background.jpg"); /* Sample travel bg */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #003399;
+    }
+
+    nav ul li a.active {
+      color:darkred;
+      font-weight: bold;
+      border-bottom: 2px solid darkred;
+    }
+    nav ul li a.active{
+      color: darkred;
+      background-color: rgba(139,0,0,0.1);
+      padding: 6px 10px;
+      border-radius:5px;
+    }
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: darkred;
+  font-weight: bold;
+  border-bottom: 2px solid darkred;
+}
+
+.register-btn {
+  margin-left: 20px;
+  background-color: darkred;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+    .register-btn:hover {
+      background-color: darkred;
+    }
+    .h-txt{
+      max-width:650px;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-align:center;
+      color: #000;
+    }
+    .h-txt span{
+      letter-spacing: 5px;
+    }
+    .h-txt h1{
+      font-size: 3.5em;
+    }
+    .h-txt a{
+      text-decoration: none;
+      background: darkred;
+      color: white;
+      padding: 10px 20px;
+      letter-spacing: 5px;
+    }
+    .span{
+      font:bold;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+
+  <div class="navbar">
+    <div class="logo">T<span style="color:black;">ravel-X</span></div>
+
+    <nav>
+      <ul>
+        <li><a href="intro.html">Home</a></li>
+        <li><a href="hillstations.html">Hill Stations</a></li>
+        <li><a href="bestoffer.html">Best Offer</a></li>
+        <li><a href="oursite.html">Our Site</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="register-btn">Register</button>
+  </div>
+    
+    <section class="h-txt">
+      <span>Enjoy</span>
+      <h1>International Travel Agency</h1>
+      <br>
+      <a href="#">plan your Trip</a>
+    </section>
+
+  </header>
+</body>
+</html>
