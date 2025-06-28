@@ -88,17 +88,24 @@ nav ul li a.active {
   border-bottom: 2px solid darkred;
 }
 
+.form-container{
+  text-align: center;
+}
+
 .register-btn {
-  margin-left: 20px;
+  border: none;
   background-color: darkred;
   color: white;
   padding: 8px 16px;
   border-radius: 4px;
-  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease,transform 0.2s;
 }
 
     .register-btn:hover {
       background-color: darkred;
+      transform: scale(1.05);
     }
     .h-txt{
       max-width:650px;
@@ -137,21 +144,25 @@ nav ul li a.active {
 
     <nav>
       <ul>
-        <li><a href="intro.html">Home</a></li>
-        <li><a href="hillstations.html">Hill Stations</a></li>
-        <li><a href="bestoffer.html">Best Offer</a></li>
-        <li><a href="oursite.html">Our Site</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="travel agency aboutus/aboutus.html">Home</a></li>
+        <li><a href="Hill Station/hillstation.html">Hill Stations</a></li>
+        <li><a href="BestOffer/bestoffer.html">Best Offer</a></li>
+        <li><a href="Our Sites/oursites.html">Our Site</a></li>
+        <li><a href="travel agency contactus/contactus.html">Contact</a></li>
       </ul>
     </nav>
-    <button class="register-btn">Register</button>
+    <div class="form-container">
+      <form action="registeration.html" method="get">
+      <button type="submit" class="register-btn">Register</button>
+      </form>
+    </div>
   </div>
     
     <section class="h-txt">
       <span>Enjoy</span>
       <h1>International Travel Agency</h1>
       <br>
-      <a href="#">plan your Trip</a>
+      <a href="plan your trip/planyourtrip.html">plan your Trip</a>
     </section>
 
   </header>
